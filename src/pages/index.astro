@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
+import Slider from '../components/Slider.astro'
 ---
 
 <DefaultLayout title="Inicio">
@@ -33,24 +34,8 @@ import ContentMedia from '../components/ContentMedia.astro'
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
-    <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
-    </p>
-  </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.1 AA Compliant</h2>
-    <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
-    </p>
-  </ContentMedia>
-  <section class="mt-64 mb-32">
+  <Slider />
+  <!--<section class="mt-64 mb-32">
     <div class="container">
       <h2 class="mb-16 text-6xl">Counters</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
@@ -60,5 +45,5 @@ import ContentMedia from '../components/ContentMedia.astro'
         <Counter count="18+" title="Months" sub="Since launch" />
       </div>
     </div>
-  </section>
+  </section>-->
 </DefaultLayout>
