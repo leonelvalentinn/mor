@@ -126,8 +126,9 @@ import logoblanco from "../assets/img/logo-blanco.png"
       flex-direction: column;
 
       .mobile-menu {
-
+        display: none;
         &.show {
+          display: block;
         }
       }
 
@@ -343,15 +344,5 @@ import logoblanco from "../assets/img/logo-blanco.png"
     -webkit-transform: translateX(-100vh);
             transform: translateX(-100vh);
   }
-}
-.mobile-menu {
-  -webkit-animation: slide-down 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-down 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-          display: none;
-}
-.show {
-  -webkit-animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-          display: block;
 }
 </style>

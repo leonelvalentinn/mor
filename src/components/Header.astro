@@ -5,25 +5,28 @@ import { Icon } from 'astro-icon'
 ---
 
 <header>
-  <SkipLinks />
+  <!--<SkipLinks />-->
   <Navigation>
     <li class="menu-item">
-      <a href="/">Inicio</a>
+      <a href="/" title="Inicio">Inicio</a>
     </li>
     <li class="menu-item">
-      <a href="/blog/">Nosotros</a>
+      <a href="#nosotros" title="Nosotros" rel="external noopener noreferrer">Nosotros</a>
     </li>
     <li class="menu-item">
-      <a href="" title="external link" rel="external noopener noreferrer">Servicios</a>
+      <a href="#servicios" title="Servicios" rel="external noopener noreferrer">Servicios</a>
     </li>
     <li class="menu-item">
-      <a href="" title="external link" rel="external noopener noreferrer">Promociones</a>
+      <a href="#promociones" title="Promociones" rel="external noopener noreferrer">Promociones</a>
     </li>
     <li class="menu-item">
-      <a href="" title="ubicación" rel="external noopener noreferrer">Ubicación</a>
+      <a href="#testimonios" title="Testimonios" rel="external noopener noreferrer">Testimonios</a>
     </li>
     <li class="menu-item">
-      <a href="" title="contacto" rel="external noopener noreferrer">Contacto</a>
+      <a href="#ubicacion" title="Ubicación" rel="external noopener noreferrer">Ubicación</a>
+    </li>
+    <li class="menu-item">
+      <a href="https://api.whatsapp.com/send?phone=526255890381" title="WhatsApp" rel="external noopener noreferrer">Contacto</a>
     </li>
   </Navigation>
 </header>
